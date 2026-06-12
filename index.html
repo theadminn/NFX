@@ -129,6 +129,12 @@
             box-shadow: 0 12px 30px rgba(220, 38, 38, 0.25);
         }
 
+        /* Roter Text-Stil innerhalb des Fensters */
+        .text-red {
+            color: #ef4444;
+            font-weight: 600;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -242,6 +248,7 @@
         <button class="menu-btn" onclick="openModal('modal-was-ist-nfx')">Was ist NET.fx?</button>
         <button class="menu-btn highlight" onclick="openModal('modal-nfx-ausschalten')">Wie NFX ausschalten?</button>
         <button class="menu-btn" onclick="openModal('modal-aufpassen')">Aufpassen</button>
+        <button class="menu-btn" onclick="openModal('modal-tools')">Tools für Privatsphäre</button>
     </main>
 
     <footer>
@@ -277,6 +284,20 @@
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal('modal-aufpassen')">&times;</span>
             <p>Wenn Sie zu oft nicht online sind im NFX, kann es sein, dass Sie suspekt werden. Benutzen Sie es nicht zu oft. Vielleicht ist es auch eine gute Idee, diese Information an bestimmte Personen nicht weiterzugeben.</p>
+        </div>
+    </div>
+
+    <!-- Fenster: Tools für Privatsphäre -->
+    <div id="modal-tools" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-tools')">&times;</span>
+            <p>Es gibt viele Wege, anonym zu bleiben oder Gefahren zu minimieren. Hier sind ein paar Applikationen, die wir selber benutzen und die den Alltag leichter und sicherer machen.</p>
+            <br>
+            <p>Browser: Tor Browser: langsam aber anonym. Brave Browser: keine Werbung und <span class="text-red">kann nicht gesperrt werden (Internetsperre)</span>.</p>
+            <br>
+            <p>Andere nützliche Tools: ExplorerPatcher, Windhawk, Microsoft PowerToys, Everything, Resource Hacker.</p>
+            <br>
+            <p style="font-style: italic; color: #a3a3a3;">Benutzung auf eigene Gefahr.</p>
         </div>
     </div>
 
